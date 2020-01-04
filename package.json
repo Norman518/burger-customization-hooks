@@ -1,5 +1,6 @@
 {
   "name": "react-complete-guide",
+  "homepage": "http://norman518.github.io/burger-customization-hooks/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,8 +55,7 @@
     "start": "npm run format && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run format && npm run build && gh-pages -d build",
     "eslint": "eslint .",
     "prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "format": "npm run prettier && npm run eslint"
@@ -103,6 +103,7 @@
   },
   "devDependencies": {
     "eslint": "^4.19.1",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   }
 }
