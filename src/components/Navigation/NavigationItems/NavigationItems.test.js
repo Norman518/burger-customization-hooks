@@ -22,6 +22,4 @@ describe('<NavigationItems />', () => {
     expect(wrapper.find(NavigationItem)).toHaveLength(3);
     expect(wrapper.contains(<NavigationItem link="/logout">Logout</NavigationItem>)).toEqual(true);
   });
-
-  
 });
